@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Текущее значение счётчика -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Основная кнопка увеличения -->
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="+4"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Ряд дополнительных кнопок -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnPlus3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+3"/>
+        <Button android:id="@+id/btnPlus2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+2"/>
+        <Button android:id="@+id/btnPlus1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button android:id="@+id/btnMinus1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-1"/>
+        <Button android:id="@+id/btnMinus2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-2"/>
+        <Button android:id="@+id/btnMinus3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-3"/>
+    </LinearLayout>
+
+    <!-- Кнопка сброса -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сброс"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
